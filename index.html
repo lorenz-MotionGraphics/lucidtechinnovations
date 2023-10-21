@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title style="color: lightblue">Lucid Technology Innovations</title>
+<meta name="title" content="lucid tech innovations">
+<meta name="description" content="lucid tech innovations is a lorenz miguel gracia page or website that research on web development technology and newer and updated script to programming languages. site provides information into lorenz miguel gracia">
+<meta name="keywords" content="lorenz, miguel, gracia">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="1 days">
+<meta name="author" content="lorenz miguel gracia">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body style="background-color: black;">
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: green;
+    text-align: center;
+  }
+
+  .profile-picture {
+    background: radial-gradient(circle, lightblue, lightgreen);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  footer {
+      background-color: lightgray;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      flex-basis: calc(100% / 8 - 20px);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin: 10px;
+    }
+
+    .card-image {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-content {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* Media queries */
+    @media (max-width: 1200px) {
+      .card {
+        flex-basis: calc(100% / 4 - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-container {
+        flex-direction: column;
+      }
+    }
+</style>
+<div class="container">
+  <h1>lucid tech innovations</h1>
+  <br>
+  <font>lorenz miguel gracia</font>
+  
+  <div class="profile-picture rounded-circle overflow-hidden shadow">
+    <img src="pdx.jpg" alt="Profile Picture" class="w-100 h-100 object-fit-cover">
+  </div>
+
+  <my-element></my-element>
+</div>
+
+<script>
+  class MyElement extends HTMLElement {
+    constructor() {
+      super();
+      const shadowRoot = this.attachShadow({ mode: 'open' });
+      const template = document.createElement('template');
+      template.innerHTML = `
+        <style>
+          div { 
+            border: 1px solid; 
+            padding: 10px; 
+            box-shadow: 5px 5px pink, 5px 5px yellow, 5px 5px green; 
+            background-color: white; 
+            margin-bottom: 10px; 
+          }
+          .horizontal-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px black;
+    margin: 5px;
+  }
+
+  .horizontal-button:hover {
+    background-color: lightgreen;
+  }
+        </style>
+        <div>
+          <a href="https://github.com/lorenz-MotionGraphics?fbclid=IwAR1si-x2wUc2AQWDSrdLO43nxU3H0EpTi94XcnMAICI3uzFfbcf6SgZhm6g" target="_blank" class="horizontal-button">Github</a>
+          <a href="https://twitter.com/LorenzComputerT?fbclid=IwAR0vXNACTBNExUfCAFi6Ev4HJZT5SZQ7BRERaS6hccN_X0s8iVZQQZ4-nQg" target="_blank" class="horizontal-button">Twitter/x</a>
+          <a href="https://www.facebook.com/lorenztechpilot/" target="_blank" class="horizontal-button">Facebook</a>
+          <a href="https://www.linkedin.com/in/lorenztechpilot/" target="_blank" class="horizontal-button">LinkedIn</a>
+        </div>
+      `;
+      shadowRoot.appendChild(template.content.cloneNode(true));
+    }
+  }
+  customElements.define('my-element', MyElement);
+</script>
+<footer>
+    <hr />
+    <div class="card-container">
+      <div class="card">
+        <img src="card-image1.jpg" alt="Card Image 1" class="card-image">
+        <h2 class="card-title">MCJ ONLINE</h2>
+        <p class="card-content">mcj online shopping website developed by lucid tech innovations and lmgresearch on 2023.</p>
+      </div>
+      <div class="card">
+        <img src="card-image2.jpg" alt="Card Image 2" class="card-image">
+        <h2 class="card-title">Source Management Links</h2>
+        <p class="card-content">Source Management Links website is a university course source for students. developed by lorenztechpilot 2022-2023</p>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
